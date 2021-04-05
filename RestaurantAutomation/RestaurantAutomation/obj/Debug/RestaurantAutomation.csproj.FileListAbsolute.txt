@@ -1,7 +1,6 @@
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\bin\Debug\RestaurantAutomation.exe.config
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\bin\Debug\RestaurantAutomation.exe
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\bin\Debug\RestaurantAutomation.pdb
-E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.csprojAssemblyReference.cache
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.Properties.Resources.resources
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.csproj.GenerateResource.cache
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.csproj.CoreCompileInputs.cache
@@ -15,6 +14,7 @@ E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAuto
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.VIEW.MenuManagementForm.resources
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.VIEW.UserManagementForm.resources
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.EditUserForm.resources
-E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.EditMenuItemForm.resources
 E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.VIEW.TableInfoForm.resources
-E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.EditOrderForm.resources
+E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.View.EditMenuItemForm.resources
+E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.View.EditOrderForm.resources
+E:\VSProjects\RestaurantAutomation\RestaurantAutomation\obj\Debug\RestaurantAutomation.csprojAssemblyReference.cache

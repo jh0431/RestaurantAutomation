@@ -7,11 +7,11 @@ namespace RestaurantAutomation.DAO
 {
     public class UserDao
     {
-        SqlSugarClient db = DBHelper.GetInstance();
+        SqlSugarClient db = DBHelper.GetInstance(); 
 
         public bool Login(User user)
         {
-            int count = db.Queryable<User>().Count(it => it.Username == user.Username || it.Password == user.Password);
+            int count = db.Queryable<User>().Count(it => it.Username == user.Username && it.Password == user.Password);
             if (count == 1)
             {
                 return true;
@@ -39,7 +39,10 @@ namespace RestaurantAutomation.DAO
 
         public void addUser(User user)
         {
-            db.Saveable(user).ExecuteCommand();
+            if (GetUserByUserName(user.Username) == null)
+            {
+                db.Saveable(user).ExecuteCommand();
+            } 
         }
 
         public void updateUser(User user)

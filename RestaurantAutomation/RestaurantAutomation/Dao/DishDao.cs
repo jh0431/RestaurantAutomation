@@ -7,13 +7,7 @@ namespace RestaurantAutomation.DAO
 {
     public class DishDao
     {
-        SqlSugarClient db = DBHelper.GetInstance();
-
-        //public List<object> GetDishesOfOrder(int orderId)
-        //{
-        //    return ;
-
-        //}
+        SqlSugarClient db = DBHelper.GetInstance(); 
 
         public Dish GetDishById(int id)
         {

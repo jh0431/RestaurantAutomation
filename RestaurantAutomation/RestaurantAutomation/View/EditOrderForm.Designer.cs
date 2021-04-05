@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace RestaurantAutomation
+namespace RestaurantAutomation.View
 {
     partial class EditOrderForm
     {

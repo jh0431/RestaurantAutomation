@@ -7,31 +7,31 @@ namespace RestaurantAutomation.DAO
 {
     public class MenuItemDao
     {
-        SqlSugarClient db = DBHelper.GetInstance(); 
+        private readonly  SqlSugarClient _db = DBHelper.GetInstance(); 
 
         public Menuitem GetMenuItemById(int id)
         {
-            return db.Queryable<Menuitem>().Where(t => t.Id == id).First();
+            return _db.Queryable<Menuitem>().Where(t => t.Id == id).First();
         }
 
         public List<Menuitem> GetMenu()
         {
-            return db.Queryable<Menuitem>().ToList();
+            return _db.Queryable<Menuitem>().ToList();
         }
 
-        public void addMenuItem(Menuitem menuItem)
+        public void AddMenuItem(Menuitem menuItem)
         {
-            db.Saveable(menuItem).ExecuteCommand();
+            _db.Saveable(menuItem).ExecuteCommand();
         }
 
-        public void updateMenuItem(Menuitem menuItem)
+        public void UpdateMenuItem(Menuitem menuItem)
         {
-            db.Updateable(menuItem).ExecuteCommand();
+            _db.Updateable(menuItem).ExecuteCommand();
         }
 
-        public void removeMenuItem(int id)
+        public void RemoveMenuItem(int id)
         {
-            db.Deleteable<Menuitem>().Where(t=>t.Id==id).ExecuteCommand();
+            _db.Deleteable<Menuitem>().Where(t=>t.Id==id).ExecuteCommand();
         }
 
     }

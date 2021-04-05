@@ -1,11 +1,10 @@
 ﻿using Models;
 using RestaurantAutomation.DAO;
 using SqlSugar;
-using System;
-using System.Collections.Generic;
+using System; 
 using System.Windows.Forms;
 
-namespace RestaurantAutomation.VIEW
+namespace RestaurantAutomation.View
 {
     public partial class TableInfoForm : Form
     {
@@ -101,7 +100,7 @@ namespace RestaurantAutomation.VIEW
                 order.Status = "Ordered";
                 order.TableNum = table.Num;
                 order.OrderedTime = DateTime.Now;
-                orderDao.addOrder(order);
+                orderDao.AddOrder(order);
                 order = orderDao.GetOrderByTableNum(table.Num);
                 MessageBox.Show("Order created successfully.", "Error");
             }

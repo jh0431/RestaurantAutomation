@@ -1,4 +1,4 @@
-﻿namespace RestaurantAutomation.VIEW
+﻿namespace RestaurantAutomation.View
 {
     partial class MenuManagementForm
     {

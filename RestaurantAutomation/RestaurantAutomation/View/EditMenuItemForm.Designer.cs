@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace RestaurantAutomation
+namespace RestaurantAutomation.View
 {
     partial class EditMenuItemForm
     {
@@ -40,7 +40,7 @@ namespace RestaurantAutomation
             // textBox_name
             // 
             this.textBox_name.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_name.Location = new System.Drawing.Point(174, 108);
+            this.textBox_name.Location = new System.Drawing.Point(174, 40);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(198, 30);
             this.textBox_name.TabIndex = 1;
@@ -49,7 +49,7 @@ namespace RestaurantAutomation
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 112);
+            this.label3.Location = new System.Drawing.Point(57, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 22);
             this.label3.TabIndex = 4;
@@ -59,7 +59,7 @@ namespace RestaurantAutomation
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(57, 170);
+            this.label4.Location = new System.Drawing.Point(57, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 22);
             this.label4.TabIndex = 6;
@@ -68,7 +68,7 @@ namespace RestaurantAutomation
             // textBox_price
             // 
             this.textBox_price.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_price.Location = new System.Drawing.Point(174, 166);
+            this.textBox_price.Location = new System.Drawing.Point(174, 98);
             this.textBox_price.Name = "textBox_price";
             this.textBox_price.Size = new System.Drawing.Size(198, 30);
             this.textBox_price.TabIndex = 5;
@@ -76,7 +76,7 @@ namespace RestaurantAutomation
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(132, 319);
+            this.button1.Location = new System.Drawing.Point(140, 167);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(149, 39);
             this.button1.TabIndex = 7;
@@ -88,7 +88,7 @@ namespace RestaurantAutomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 443);
+            this.ClientSize = new System.Drawing.Size(427, 227);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox_price);

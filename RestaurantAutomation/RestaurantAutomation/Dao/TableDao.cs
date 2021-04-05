@@ -19,21 +19,10 @@ namespace RestaurantAutomation.DAO
             return db.Queryable<Table>().Where(t => t.Id == id).First();
         }
 
-        public void addTable(Table table)
-        {
-            db.Saveable(table).ExecuteCommand();
-        }
-
         public void updateTable(Table table)
         {
             db.Updateable(table).ExecuteCommand();
         } 
-
-        public enum TableStatus
-        {
-            Clean,
-            Dirty,
-            Occupied
-        }
+        
     }
 }

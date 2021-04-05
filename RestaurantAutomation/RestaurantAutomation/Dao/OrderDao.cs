@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Models;
+﻿using Models;
 using SqlSugar;
 
 namespace RestaurantAutomation.DAO
@@ -8,23 +6,13 @@ namespace RestaurantAutomation.DAO
     public class OrderDao
     {
         SqlSugarClient db = DBHelper.GetInstance();
-         
-        public Order GetOrderById(int id)
-        {
-            return db.Queryable<Order>().Where(t => t.Id == id).First();
-        }
 
         public Order GetOrderByTableNum(string tableNum)
         {
             return db.Queryable<Order>().Where(t => t.TableNum == tableNum && t.Status != "Completed").First();
         }
 
-        public List<Order> GetOrders()
-        {
-            return db.Queryable<Order>().ToList();
-        }
-
-        public void addOrder(Order order)
+        public void AddOrder(Order order)
         {
             db.Saveable(order).ExecuteCommand();
         }
@@ -34,9 +22,9 @@ namespace RestaurantAutomation.DAO
             db.Updateable(order).ExecuteCommand();
         }
 
-        public void removeOrder(int id)
+        public void removeAll()
         {
-            db.Deleteable<Order>().Where(t => t.Id == id).ExecuteCommand();
+            db.Deleteable<Order>().ExecuteCommand();
         }
 
     }

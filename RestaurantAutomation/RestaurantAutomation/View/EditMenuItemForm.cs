@@ -3,12 +3,12 @@ using RestaurantAutomation.DAO;
 using System;  
 using System.Windows.Forms;
 
-namespace RestaurantAutomation
+namespace RestaurantAutomation.View
 {
     public partial class EditMenuItemForm : Form
     {
-         Menuitem menuItem = null;
-        MenuItemDao menuItemDao = new MenuItemDao();
+       private  Menuitem _menuItem = null;
+       private readonly MenuItemDao _menuItemDao = new MenuItemDao();
 
         public EditMenuItemForm(   )
         {
@@ -18,7 +18,7 @@ namespace RestaurantAutomation
         public EditMenuItemForm(Menuitem menuItem)
         {
             InitializeComponent();
-            this.menuItem = menuItem;
+            this._menuItem = menuItem;
             textBox_name.Text = menuItem.Name;
             textBox_price.Text = menuItem.Price+""; 
         }
@@ -31,15 +31,15 @@ namespace RestaurantAutomation
         private void button1_Click(object sender, EventArgs e)
         {
            
-            if (menuItem == null)
+            if (_menuItem == null)
             {
-                menuItem = new Menuitem(textBox_name.Text,decimal.Parse( textBox_price.Text));
-                menuItemDao.addMenuItem(menuItem);
+                _menuItem = new Menuitem(textBox_name.Text,decimal.Parse( textBox_price.Text));
+                _menuItemDao.AddMenuItem(_menuItem);
             }
             else{
-                menuItem.Name = textBox_name.Text;
-                menuItem.Price = decimal.Parse(textBox_price.Text);
-                menuItemDao.updateMenuItem(menuItem);
+                _menuItem.Name = textBox_name.Text;
+                _menuItem.Price = decimal.Parse(textBox_price.Text);
+                _menuItemDao.UpdateMenuItem(_menuItem);
             }
             this.DialogResult = DialogResult.OK;
             Close(); 

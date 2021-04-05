@@ -1,6 +1,6 @@
 ﻿using Models;
 using RestaurantAutomation.DAO;
-using RestaurantAutomation.VIEW;
+using RestaurantAutomation.View; 
 using System;
 using System.Collections.Generic;
 using System.Drawing;

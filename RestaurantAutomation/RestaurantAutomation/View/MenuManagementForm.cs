@@ -1,16 +1,12 @@
 ﻿using Models;
 using RestaurantAutomation.DAO;
+using RestaurantAutomation.View;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.Generic; 
+using System.Linq; 
 using System.Windows.Forms;
 
-namespace RestaurantAutomation.VIEW
+namespace RestaurantAutomation.View
 {
     public partial class MenuManagementForm : Form
     {
@@ -57,7 +53,7 @@ namespace RestaurantAutomation.VIEW
             DialogResult dr = MessageBox.Show("Are you sure to delete this menu item?", "Confirm", msgButton);
             if (dr == DialogResult.OK)
             {
-                menuItemDao.removeMenuItem(Int32.Parse(id));
+                menuItemDao.RemoveMenuItem(Int32.Parse(id));
                 loadData();
             }
         }

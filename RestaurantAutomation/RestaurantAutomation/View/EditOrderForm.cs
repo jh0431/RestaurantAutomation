@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Drawing; 
 using System.Windows.Forms;
 
-namespace RestaurantAutomation
+namespace RestaurantAutomation.View
 {
     public partial class EditOrderForm : Form
     {
@@ -31,12 +31,14 @@ namespace RestaurantAutomation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dish dish = new Dish();
-            dish.MenuItemId =int.Parse( comboBox1.SelectedValue.ToString());
-            dish.OrderId = order.Id;
-            dish.Status = "Ordered";
-            dish.OrderedTime = DateTime.Now;
-            dish.Count = int.Parse(textBox_count.Text);
+            Dish dish = new Dish
+            {
+                MenuItemId = int.Parse(comboBox1.SelectedValue.ToString()),
+                OrderId = order.Id,
+                Status = "Ordered",
+                OrderedTime = DateTime.Now,
+                Count = int.Parse(textBox_count.Text)
+            };
             dishDao.addDish(dish); 
             this.DialogResult = DialogResult.OK;
             Close(); 
